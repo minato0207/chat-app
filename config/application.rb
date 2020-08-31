@@ -23,5 +23,8 @@ module ChatApp
       g.helper false
       g.test_fremework false
     end
+    config.i18n.default_locale = :ja
+    config.time_zone = 'Tokyo'
+    config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag }
   end
 end
